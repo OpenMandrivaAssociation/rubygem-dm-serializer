@@ -49,3 +49,10 @@ Documents, RDoc & RI documentation for %{name}.
 %doc %{ruby_gemdir}/gems/%{rbname}-%{version}/*.rdoc
 %doc %{ruby_gemdir}/gems/%{rbname}-%{version}/LICENSE
 %doc %{ruby_gemdir}/doc/%{rbname}-%{version}
+
+
+%changelog
+* Thu Jan 26 2012 Alexander Khrukin <akhrukin@mandriva.org> 1.2.1-1
++ Revision: 769099
+- imported package rubygem-dm-serializer
+
