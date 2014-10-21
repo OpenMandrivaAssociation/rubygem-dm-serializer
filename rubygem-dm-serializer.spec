@@ -4,12 +4,12 @@
 Summary:	DataMapper plugin for serializing Resources and Collections
 Name:		rubygem-%{rbname}
 
-Version:	1.2.1
+Version:	1.2.2
 Release:	1
 Group:		Development/Ruby
 License:	GPLv2+ or Ruby
 URL:		http://github.com/datamapper/dm-serializer
-Source0:	http://gems.rubyforge.org/gems/%{rbname}-%{version}.gem
+Source0:	http://gems.rubyforge.org/gems/dm-serializer-1.2.2.gem
 BuildRequires:	rubygems 
 BuildArch:	noarch
 Requires:	rubygem-json_pure
