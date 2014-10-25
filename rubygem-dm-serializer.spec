@@ -15,13 +15,13 @@ BuildArch:	noarch
 DataMapper plugin for serializing Resources and Collections.
 
 %files
-%dir %{ruby_gemdir}/gems/%{rbname}-%{version}
-%dir %{ruby_gemdir}/gems/%{rbname}-%{version}/lib
-%dir %{ruby_gemdir}/gems/%{rbname}-%{version}/lib/%{rbname}/xml
-%{ruby_gemdir}/gems/%{rbname}-%{version}/lib/%{rbname}/xml/*.rb
-%{ruby_gemdir}/gems/%{rbname}-%{version}/lib/%{rbname}/*.rb
-%{ruby_gemdir}/gems/%{rbname}-%{version}/lib/*.rb
-%{ruby_gemdir}/specifications/%{rbname}-%{version}.gemspec
+%dir %{gem_dir}/gems/%{rbname}-%{version}
+%dir %{gem_dir}/gems/%{rbname}-%{version}/lib
+%dir %{gem_dir}/gems/%{rbname}-%{version}/lib/%{rbname}/xml
+%{gem_dir}/gems/%{rbname}-%{version}/lib/%{rbname}/xml/*.rb
+%{gem_dir}/gems/%{rbname}-%{version}/lib/%{rbname}/*.rb
+%{gem_dir}/gems/%{rbname}-%{version}/lib/*.rb
+%{gem_dir}/specifications/%{rbname}-%{version}.gemspec
 
 #----------------------------------------------------------------------------
 
@@ -35,9 +35,9 @@ BuildArch:	noarch
 Documents, RDoc & RI documentation for %{name}.
 
 %files doc
-%doc %{ruby_gemdir}/gems/%{rbname}-%{version}/*.rdoc
-%doc %{ruby_gemdir}/gems/%{rbname}-%{version}/LICENSE
-%doc %{ruby_gemdir}/doc/%{rbname}-%{version}
+%doc %{gem_dir}/gems/%{rbname}-%{version}/*.rdoc
+%doc %{gem_dir}/gems/%{rbname}-%{version}/LICENSE
+%doc %{gem_dir}/doc/%{rbname}-%{version}
 
 #----------------------------------------------------------------------------
 
