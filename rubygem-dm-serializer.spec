@@ -1,40 +1,18 @@
-# Generated from dm-serializer-1.2.1.gem by gem2rpm5 -*- rpm-spec -*-          
-%define	rbname	dm-serializer
+%define rbname dm-serializer
 
 Summary:	DataMapper plugin for serializing Resources and Collections
 Name:		rubygem-%{rbname}
-
-Version:	1.2.1
+Version:	1.2.2
 Release:	1
-Group:		Development/Ruby
 License:	GPLv2+ or Ruby
-URL:		http://github.com/datamapper/dm-serializer
+Group:		Development/Ruby
+URL:		http://github.com/datamapper/%{rbname}
 Source0:	http://gems.rubyforge.org/gems/%{rbname}-%{version}.gem
-BuildRequires:	rubygems 
+BuildRequires:	rubygems
 BuildArch:	noarch
-Requires:	rubygem-json_pure
-Requires:	rubygem-multi_json
 
 %description
-DataMapper plugin for serializing Resources and Collections
-
-%package	doc
-Summary:	Documentation for %{name}
-Group:		Books/Computer books
-Requires:	%{name} = %{EVRD}
-BuildArch:	noarch
-
-%description	doc
-Documents, RDoc & RI documentation for %{name}.
-
-%prep
-%setup -q
-
-%build
-%gem_build
-
-%install
-%gem_install
+DataMapper plugin for serializing Resources and Collections.
 
 %files
 %dir %{ruby_gemdir}/gems/%{rbname}-%{version}
@@ -45,7 +23,30 @@ Documents, RDoc & RI documentation for %{name}.
 %{ruby_gemdir}/gems/%{rbname}-%{version}/lib/*.rb
 %{ruby_gemdir}/specifications/%{rbname}-%{version}.gemspec
 
+#----------------------------------------------------------------------------
+
+%package doc
+Summary:	Documentation for %{name}
+Group:		Documentation
+Requires:	%{name} = %{EVRD}
+BuildArch:	noarch
+
+%description doc
+Documents, RDoc & RI documentation for %{name}.
+
 %files doc
 %doc %{ruby_gemdir}/gems/%{rbname}-%{version}/*.rdoc
 %doc %{ruby_gemdir}/gems/%{rbname}-%{version}/LICENSE
 %doc %{ruby_gemdir}/doc/%{rbname}-%{version}
+
+#----------------------------------------------------------------------------
+
+%prep
+%setup -q
+
+%build
+%gem_build
+
+%install
+%gem_install
+
