@@ -17,6 +17,7 @@ DataMapper plugin for serializing Resources and Collections.
 %files
 %dir %{gem_dir}/gems/%{rbname}-%{version}
 %dir %{gem_dir}/gems/%{rbname}-%{version}/lib
+%dir %{gem_dir}/gems/%{rbname}-%{version}/lib/%{rbname}
 %dir %{gem_dir}/gems/%{rbname}-%{version}/lib/%{rbname}/xml
 %{gem_dir}/gems/%{rbname}-%{version}/lib/%{rbname}/xml/*.rb
 %{gem_dir}/gems/%{rbname}-%{version}/lib/%{rbname}/*.rb
