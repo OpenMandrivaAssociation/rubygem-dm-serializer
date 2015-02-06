@@ -3,7 +3,7 @@
 Summary:	DataMapper plugin for serializing Resources and Collections
 Name:		rubygem-%{rbname}
 Version:	1.2.2
-Release:	1
+Release:	2
 License:	GPLv2+ or Ruby
 Group:		Development/Ruby
 URL:		http://github.com/datamapper/%{rbname}
