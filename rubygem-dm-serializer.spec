@@ -6,7 +6,7 @@ Version:	1.2.2
 Release:	2
 License:	GPLv2+ or Ruby
 Group:		Development/Ruby
-URL:		http://github.com/datamapper/%{rbname}
+URL:		https://github.com/datamapper/%{rbname}
 Source0:	http://gems.rubyforge.org/gems/%{rbname}-%{version}.gem
 BuildRequires:	rubygems
 BuildArch:	noarch
